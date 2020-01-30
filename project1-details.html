@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
     <link rel="stylesheet" href="assets/css/smoothproducts.css">
     <link rel="stylesheet" href="assets/css/Social-Icons.css">
+    <link rel="stylesheet" type="text/css" href="/project1-detail/progress-bar.css">
 </head>
 
 <body>
@@ -44,12 +45,44 @@
                         </div>
                     </div>
                 </div>
+                
+                
+                <div class="container">
+                    <div id="outside-current" class="flex items-center mt-4">
+                        $<span id="current-amount">$</span>
+                    </div>
+                        <div id="goal">
+                        reached of $<span id="goal-amount">$</span> Goal
+                        </div>
+                     
+                    
+                </div>
+<!-- THIS IS THE PROGRESS BAR         -->
+
                 <div class="row">
                     <div class="col">
-                        <div class="progress" style="padding: 10px;background-color: rgb(175,189,203);margin: 20px;height: 60px;">
-                            <div class="progress-bar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div>
-                        </div><button class="btn btn-primary" type="button" style="padding: 20px;margin: 20px;">Make an Impact</button></div>
+                        <div id="myProgress"class="progress" style="padding: 10px;background-color: rgb(175,189,203);margin: 20px;height: 60px;">
+                            <div id="myBar" class="progress-bar" role="progress-bar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                <span id="progress-percent">1%</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
+                
+                
+                
+<!-- THIS IS THE DONATION BUTTON -->
+                
+                <div class="container">
+                    <button id="donation-button" class="btn btn-outline-secondary" type="button" onclick="move()">Donate</button>
+
+                </div>
+                
+               
+
+                <button class="btn btn-primary" type="button" style="padding: 20px; margin: 20px;">Make an Impact</button>
+                
                 <div>
                     <hr>
                     <div>
@@ -62,12 +95,15 @@
                 </div>
             </div>
         </section>
+        
     </main>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="assets/js/smoothproducts.min.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="/project1-detail/progress-bar.js"></script>
 </body>
 
 </html>
