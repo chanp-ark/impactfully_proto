@@ -1,0 +1,28 @@
+#myProgress {
+    width: 100%;
+    background-color: grey;
+}
+  
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #1C6BFF;
+}
+
+#outside-current {
+    font-size: 40px;
+    color: #2E5BAF
+}
+#current-amount {
+    font-size: 50px;
+    font-weight: bold;
+    color: #2E5BAF
+}
+  
+#goal {
+    font-weight: bold;
+}
+
+#goal-amount {
+    color: #2E5BAF
+}
